@@ -170,7 +170,7 @@ class pt100rtd
 {
 private:
     int search_pt100_list(uint16_t key) ;
-    float ohmsX100_to_celsius(uint16_t ohmsX100) ;
+    
 
 public:
     pt100rtd() ;
@@ -179,7 +179,7 @@ public:
     float celsius(float Rrtd) ;
 
     float celsius_to_Pt100ohms (float celsius) ;
-
+	float ohmsX100_to_celsius(uint16_t ohmsX100) ;
     float celsius_cvd(float R_ohms) ;
     float celsius_cubic(float R_ohms) ;
     float celsius_polynomial (float R_ohms) ;
